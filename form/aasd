@@ -1,0 +1,67 @@
+Title MERN Stack
+
+Header Introduction to HTML and CSS
+
+Paragraph It consists of a series of elements that tell a web browser how to display content, including text, images, links, and multimedia.
+
+Header : List of Fruits
+
+    Apple, Grape, Banana Orange Blue Berry
+
+    type Number
+      Capital Alphabets
+      Small Case Alphabets
+      Roman Numerals
+
+Nested List
+A. Programming Languages
+i C
+ii C++
+iii Java
+Python
+B. DSA
+Array
+List
+Graph
+Queue
+Stack
+Tree
+C. Web Technologies
+HTML
+CSS
+Javascript
+a. React
+b. Angular
+BootStrap
+
+Header =>List of Drinks
+
+o Tea
+a.Green Tea
+b.Lime Tea
+c.Black Tea
+d.Broken Orange Peko
+o Coffee
+a.Cappacino
+b.Filter Coffee
+c.Black Coffee
+
+o Malt Based
+a.Horlicks
+b. Boost
+(square) .Classic
+(square) .Continental
+c.Milo
+
+Heading: Courses
+
+Web Development
+create a HTML Page for webdev
+Data Science
+create a HTML Page for data science
+Cloud Computing
+create a HTML Page for cloud computing
+Cybersecurity
+create a HTML Page for cybersecurity
+
+https://github.com/sam-rubin/exercises
