@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Display</title>
+  </head>
+  <body>
+    <h2>Submitted Information</h2>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Age:</strong> <span id="age"></span></p>
+    <p><strong>Gender:</strong> <span id="gender"></span></p>
+    <p><strong>Selected Course:</strong> <span id="course"></span></p>
+    <p><strong>Skills:</strong> <span id="skills"></span></p>
+    <p><strong>Comments:</strong> <span id="comments"></span></p>
+
+    <script>
+      // Function to extract URL parameters
+      function getQueryParams() {
+        let params = new URLSearchParams(window.location.search);
+        document.getElementById("name").innerText = params.get("name");
+        document.getElementById("age").innerText = params.get("age");
+        document.getElementById("gender").innerText = params.get("gender");
+        document.getElementById("course").innerText = params.get("course");
+
+        // Handling multiple checkboxes
+        let skills = params.getAll("skills");
+        document.getElementById("skills").innerText =
+          skills.join(", ") || "None";
+
+        document.getElementById("comments").innerText =
+          params.get("comments") || "No comments provided";
+      }
+      getQueryParams();
+    </script>
+  </body>
+</html>

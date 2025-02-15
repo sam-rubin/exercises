@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Course Registration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        color: #007bff;
+      }
+      label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[readonly] {
+        background-color: #eee;
+        cursor: not-allowed;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Course Registration</h2>
+      <form action="submit-registration.html" method="POST">
+        <label for="name">Student Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your full name"
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="course">Select Course:</label>
+        <select
+          id="course"
+          name="course"
+          required
+          onchange="updateCourseDetails()"
+        >
+          <option value="" disabled selected>Select a Course</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="cloud">Cloud Computing</option>
+          <option value="cyber">Cybersecurity</option>
+        </select>
+
+        <label for="duration">Course Duration:</label>
+        <input type="text" id="duration" name="duration" readonly />
+
+        <label for="fees">Course Fees ($):</label>
+        <input type="text" id="fees" name="fees" readonly />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script>
+      function updateCourseDetails() {
+        const courseDetails = {
+          web: { duration: "6 Months", fees: "500" },
+          data: { duration: "8 Months", fees: "800" },
+          cloud: { duration: "7 Months", fees: "700" },
+          cyber: { duration: "5 Months", fees: "600" },
+        };
+
+        let selectedCourse = document.getElementById("course").value;
+        document.getElementById("duration").value =
+          courseDetails[selectedCourse].duration;
+        document.getElementById("fees").value =
+          courseDetails[selectedCourse].fees;
+      }
+    </script>
+  </body>
+</html>

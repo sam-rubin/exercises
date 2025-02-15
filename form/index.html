@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h2>User Registration Form</h2>
+    <form action="display.html" method="GET">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" required /> Male
+      <input type="radio" name="gender" value="Female" required /> Female
+      <br /><br />
+
+      <label for="courses">Select Course:</label>
+      <select id="courses" name="course">
+        <option value="Web Development">Web Development</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Cyber Security">Cyber Security</option>
+      </select>
+      <br /><br />
+
+      <label>Skills:</label>
+      <input type="checkbox" name="skills" value="HTML" /> HTML
+      <input type="checkbox" name="skills" value="CSS" /> CSS
+      <input type="checkbox" name="skills" value="JavaScript" /> JavaScript
+      <br /><br />
+
+      <label for="comments">Additional Comments:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
