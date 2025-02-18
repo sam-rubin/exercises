@@ -1,0 +1,14 @@
+1. create course array
+
+values = css, js, html, react and vue.js
+
+Use the For Each Loop to iterate over the Array 
+
+
+2. Create Fruits Array 
+
+values = Apples, Banana, Orange, Kiwi and Berries
+
+Iterate over the array using For Each 
+While Iterating Log the Fruits in ALL CAPS
+

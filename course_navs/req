@@ -1,0 +1,19 @@
+Syntax for Lambda Expression
+
+1.If a Function contains no arguments
+let funName = () => { // Body of the function}
+
+2.If a Function has only one Arguments
+let funName = (a) => {Body of the function};
+OR
+Round Brackets for the argument can be optional for this case.
+
+let funName = a => {Body of the function};
+
+3. If a function has more than one argument
+
+let funName =(a,b,c) => {Body of the function}
+
+4. If a function has only a return expression then the body of the function is
+   Optional
+   let funName = () => return expression alone

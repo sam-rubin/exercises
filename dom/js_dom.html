@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Script</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      label {
+        display: block;
+      }
+      input {
+        width: 100%;
+      }
+      .radio-group {
+        display: flex;
+        gap: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="display.html" method="get">
+        <label for="first_name">First Name</label>
+        <input value="" id="first_name" type="text" />
+        <label for="email">Email</label>
+        <input value="" id="email" type="email" />
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" />
+        <label for="phoneNumber">Mobile Number</label>
+        <input id="phoneNumber" type="number" />
+        <label for="course">Course</label>
+        <div class="radio-group">
+          <label for="radio">CSS</label>
+          <input id="course_css" name="course" type="radio" value="css" />
+          <label for="course_html">HTML</label>
+          <input id="course_html" name="course" type="radio" value="html" />
+          <label for="course_js">JS</label>
+          <input id="course_js" name="course" type="radio" value="js" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
